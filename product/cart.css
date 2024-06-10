@@ -1,0 +1,47 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/Suissnord.otf);
+}
+
+.background img {
+    opacity: 10%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.background .cart {
+    width: 80vw;
+    top: 20vh;
+    left: -30vw;
+}
+
+.login, .admin_options{
+    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(rgb(10, 10, 10), black);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: myFont1;
+}
+
+.title{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.title {
+    margin-top: 10vh;
+    font-family: myFont2;
+    text-transform: none;
+    font-size: calc(2vw + 30px);
+}

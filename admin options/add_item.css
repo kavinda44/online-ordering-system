@@ -1,0 +1,83 @@
+.title{  
+    margin: 2vw 0;
+    font-size: calc(4vw + 10px);
+    display: none;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 2vw;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 1px rgb(255, 0, 153);
+    font-size: calc(1vw + 10px);
+    letter-spacing: 0.2vw;
+}
+
+.data_form{
+    color: white;
+    text-align: center;
+}
+
+.data_form label{
+    text-transform: uppercase;
+    margin: 0px 2vw;
+}
+
+.data_form input, .data_form select, .data_form textarea{
+    background-color: transparent;
+    color: white;
+    
+    margin: 20px 0;
+    padding: 5px;
+
+    border: 2px solid rgb(255, 0, 153);
+    border-radius: 25px;
+
+    font-size:  calc(1vw + 0.5rem);
+
+    text-align: center;
+
+    font-family: monospace;
+    width: 30ch;
+}
+
+.data_form select,.data_form select option{
+    text-transform: uppercase;
+}
+
+.data_form select option{
+    background-color: black;
+}
+
+.options{
+    margin: 0px 0px 4vh 0px;
+    padding: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.options a{
+    color: white;
+    font-size: calc(1.5vw + 10px);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.add_item .options .add a{
+    color: rgb(255, 0, 153);
+} 
+
+.data_form textarea{
+    text-align: left;
+    border-radius: 0px;
+}
+
+.data_form #image{
+    text-transform: uppercase;
+}
+.account:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/Suissnord.otf);
+}
+
+.pcAccessories {
+    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(rgb(10, 10, 10), black);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: myFont1;
+}
+
+.title {
+    background-color: transparent;
+    color: white;
+    margin: 10vh 0;
+    font-family: myFont2;
+    text-transform: uppercase;
+    font-size: 7vw;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.background img {
+    opacity: 5%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.background .MrPC {
+    rotate: 90deg;
+    width: 40vw;
+    bottom: 3vh;
+    left: -10vw;
+}
+
+.background .Champion {
+    width: 30vw;
+    top: -2vh;
+    right: 0.5vw;
+}
+
+.background .WASD {
+    width: 20vw;
+    top: 0vh;
+    left: 20vw;
+}
+
+.background .Element04 {
+    width: 60vw;
+    bottom: -15vh;
+    right: 5vw;
+}
+
+.pcAccessories .container {
+    color: white;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
+    grid-template-rows: repeat(3, minmax(400px, 600px));
+    gap: 3vh;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 600px;
+}
+
+.pcAccessories .container div {
+    background-color: rgb(10, 10, 10);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5%;
+    box-shadow: rgb(255, 0, 153) 0px 0px 1px;
+    /*shadow colour horizontal offset vertical offset shadow size*/
+}
+
+.pcAccessories .container .mouse {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.5)),
+        url(../pictures/gamingMouse.jpg);
+}
+
+.pcAccessories .container .keyboard {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.5)),
+        url(../pictures/keyboard.jpg);
+}
+
+.pcAccessories .container .headset {
+    background-image: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.8)),
+        url(../pictures/gamingheadphones.jpg);
+}
+
+.pcAccessories .container>div:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,418 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/Suissnord.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+}
+.header .dropdownSection {
+    display: none;
+    background-color: black;
+    height: 7.5vh;
+}
+
+.header .dropdownWrapper {
+    background-color: black;
+    height: 7.5vh;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.header .dropdownButton {
+    background-color: black;
+    height: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.header .dropdownButton img {
+    width: 100%;
+    height: 50%;
+}
+
+.header .dropdownOptions {
+    background-color: black;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 25vw;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header .dropdownWrapper:hover .dropdownOptions {
+    display: block;
+}
+
+.header .dropdownWrapper:hover .dropdownOptions a {
+    color: black;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: calc(1.3vw + 10px);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header .dropdownOptions a:hover {
+    background-color: rgb(255, 0, 153);
+}
+
+.homepage {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: myFont1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            black),
+        url(../pictures/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.header .section-2 {
+    height: 15vh;
+    background-color: black;
+    border-radius: 0 0 30% 30%;
+}
+
+.header ul {
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header ul li {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3vw;
+}
+
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+}
+
+.header .section-3 ul li {
+    background-color: rgba(128, 128, 128, 0.);
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5em;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3vw;
+}
+
+.header .section-3 .cart{
+    position: relative;
+}
+
+#tot_ic{
+    background-color: rgb(255, 0, 153);
+    padding: 0.1rem;
+    padding-left: calc(0.1vw + 0.2rem);
+    border-radius: 2px;
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    font-size: calc(0.2vw + 10px);
+    text-align: center;
+}
+
+.header ul li img {
+    margin-right: 0.5rem;
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+.header .section-2 img {
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------*/
+.homepage .container {
+    background-color: rgba(0, 0, 0, 0.);
+    width: 100%;
+    height: 85vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage .container .cell-1 {
+    background-color: rgb(0, 255, 255, 0.);
+    flex-grow: 1;
+    padding-left: 2vw;
+    font-size: 8vw;
+    font-family: myFont2;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.homepage .container .cell-1 span {
+    color: rgb(255, 0, 153);
+}
+
+.homepage .container .cell-2 {
+    background-color: rgba(255, 0, 0, 0.0);
+    color: white;
+    margin: 2vw;
+    padding: 0.8em 2em;
+    border: 0.1em solid rgb(255, 0, 153);
+    border-radius: 2em;
+    font-size: 1.9vw;
+    font-family: myFont1;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    position: relative;
+    top: 11vw;
+    right: 1vw;
+}
+
+.homepage .container .cell-2:hover{
+    cursor: pointer;
+}
+
+.header .section-3 .search{
+    display: none;
+}
+
+/*------------------------------------------------------------------*/
+
+.header .section-3 .cart{
+    position: relative;
+    cursor: pointer;
+}
+
+/*.cart_title::after{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    content: "";
+    border: 10px solid;
+    border-color:   #0000 #0000  rgba(255, 0, 153, 0.1) #0000;
+    z-index: 10;
+}*/
+
+.header .section-3 .cart .cart_details{
+    background-color: rgba(0, 0, 0, 0.95);
+
+    width: 40vw;
+    height: fit-content;
+
+    padding: 0px 20px;
+
+    display: none;
+
+    position: absolute;
+    top: calc(100% - 10px);
+    left: -200%;
+
+    border-radius: 25px;
+
+    font-size: calc(0.7vw + 10px);
+    text-align: center;
+}
+
+.header .section-3 .cart .cart_details .cart_items{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+}
+
+.header .section-3 .cart .cart_details .cart_items img{
+    width: 150px;
+    height: 150px;
+}
+
+.header .section-3 .cart .cart_details .cart_items .item_title{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.header .section-3 .cart .cart_details .total_cost{
+    margin: 2vh 0;
+}
+
+.header .section-3 .cart .cart_details .cart_items #remove_button{
+    background-color: transparent;
+    color: white;
+    
+    width: 20ch;
+
+    margin: 10px 0;
+    padding: 5px;
+
+    display: inline;
+    justify-self: center;
+
+    border: 2px solid rgb(255, 0, 153);
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgb(255, 0, 153);
+    cursor: pointer;
+
+    font-size: calc(0.5vw + 10px);
+    font-family: myFont1;
+
+    text-transform: uppercase;
+}
+
+.header .section-3 .cart .cart_details .cart_items .border{
+    margin: 2vh 0;
+    border-bottom: 2px dashed rgb(255, 0, 153);
+}
+
+.header .section-3 .cart .cart_details #order_button{
+    background-color: transparent;
+    color: white;
+    
+    width: 20ch;
+
+    margin: 20px 0;
+    padding: 10px;
+
+    display: inline;
+
+    border: 2px solid rgb(255, 0, 153);
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgb(255, 0, 153);
+    cursor: pointer;
+
+    font-size: calc(0.7vw + 10px);
+    font-family: myFont1;
+
+    text-transform: uppercase;
+}
+
+.header .section-3 .cart:hover .cart_details{
+    display: block;
+}
+
+/*------------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    .header .section-1 {
+        display: none;
+    }
+
+    .header .dropdownSection {
+        display: inline-block;
+    }
+
+    .header ul li img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0;
+    }
+
+    .header ul li span {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .homepage .container .cell-1 {
+        padding-left: 3vw;
+        font-size: 8vw;
+    }
+
+    .homepage .container .cell-2 {
+        align-self: flex-start;
+        position: static;
+        font-size: 2.4vw;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .homepage .container .cell-1 {
+        font-size: 10vw;
+    }
+
+    .homepage .container .cell-2 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .homepage .container .cell-2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-height: 415px) {
+    .homepage .container .cell-1 {
+        padding-left: 2vw;
+        font-size: 7vw;
+    }
+
+    .homepage .container .cell-2 {
+        align-self: center;
+        font-size: 1.9vw;
+        position: relative;
+        right: 4vw;
+    }
+}
+
+@media (max-height: 415px) {
+    .homepage .container .cell-1 {
+        margin-top: -15vh;
+        font-size: 5.5vw;
+    }
+
+    .homepage .container .cell-2 {
+        align-self: center;
+        font-size: 1.7vw;
+        position: relative;
+        top: 14vh;
+        right: 8vw;
+    }
+}

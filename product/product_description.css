@@ -1,0 +1,109 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/NovaMono-Regular.ttf);
+}
+
+.title{
+    font-size: calc(2.7vw + 10px);
+}
+
+.item_details{
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+
+    margin: 0 2vw;
+    padding: calc(2vw + 10px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 50px;
+
+    font-size: calc(1.5vw + 10px);
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+}
+
+.item_details .image{
+    background-position: center;
+    background-size: cover;
+    width: calc(40vw + 160px);
+    height: calc(40vw + 160px);
+    text-indent: -9999px;
+}
+
+.item_details .description{
+    align-self: flex-start;
+}
+
+.item_details .description>*{
+    font-size: calc(1vw + 10px);
+    text-transform: none;
+    line-height: 150%;
+}
+
+.item_details .description>p{
+    font-family: myFont2;
+    font-weight: 500;
+}
+
+.item_details .description>pre{
+    width: 10ch;
+    font-family: myFont2;
+    font-weight: 100;
+}
+
+.order button{
+    background-color: transparent;
+    color: white;
+    
+    margin: 20px 0;
+    padding: 20px;
+
+    border: 2px solid rgb(255, 0, 153);
+    border-radius: 25px;
+
+    box-shadow: 0 0 10px rgb(255, 0, 153);
+    cursor: pointer;
+
+    font-size: calc(1vw + 10px);
+    font-family: myFont1;
+}
+
+.order #order_quantity{
+    background-color: transparent;
+    color: white;
+    
+    width: 10ch;
+    display: inline;
+
+    margin: 20px 0;
+    padding: 20px;
+
+    border: 1px solid white;
+    border-radius: 25px;
+
+    font-size: calc(1vw + 8px);
+    font-family: myFont2;
+    font-weight: 500;
+}
+
+.product .buttons{
+    margin-top: 1.5vh;
+    display: flex;
+    gap: 8px;
+}
+
+.bi-dash-lg{
+    color: #d90429;
+}
+
+.bi-plus-lg{
+    color: #52b788;
+}

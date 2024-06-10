@@ -1,0 +1,7 @@
+.delete_item .options .delete a{
+    color: rgb(255, 0, 153);
+} 
+
+.delete_item #delete_message{
+    color: white;
+}

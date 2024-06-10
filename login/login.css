@@ -1,0 +1,93 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/Suissnord.otf);
+}
+
+.background img {
+    opacity: 2%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.background .MrPC {
+    width: 150vw;
+    top: -8vh;
+    left: -50vw;
+}
+
+/*header{
+    font-family: myFont1;
+}*/
+
+.login, .admin_options{
+    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(rgb(10, 10, 10), black);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: myFont1;
+}
+
+.title, .message, #login_form, #login_form label{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.title {
+    margin-top: 10vh;
+    font-family: myFont2;
+    text-transform: none;
+    font-size: calc(4vw + 30px);
+}
+
+.message, #login_form label{
+    font-family: myFont1;
+    font-size: calc(1vw + 10px);
+}
+
+.message {
+    margin: 6vh 0;
+}
+
+#login_form input{
+    background-color: transparent;
+    color: white;
+    
+    margin: 20px 0;
+    padding: 10px;
+
+    border: 2px solid rgb(255, 0, 153);
+    border-radius: 25px;
+
+    font-size:  calc(1vw + 0.5rem);
+
+    text-align: center;
+}
+
+#username, #password{
+    font-family: monospace;
+    width: 30ch;
+}
+
+#login, #reset{
+    width: 20ch;
+    font-family: myFont1;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+}
+
+#error{
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+}

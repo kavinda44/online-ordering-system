@@ -1,0 +1,113 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/Suissnord.otf);
+}
+
+.product {
+    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(rgb(10, 10, 10), black);
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: myFont1;
+}
+
+.title {
+    color: white;
+    margin: 10vh 0;
+    font-family: myFont2;
+    text-transform: uppercase;
+    font-size: 7vw;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.background img {
+    opacity: 5%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.background .MrPC {
+    rotate: 90deg;
+    width: 40vw;
+    bottom: 3vh;
+    left: -10vw;
+}
+
+.background .GameOn {
+    width: 30vw;
+    top: 0vh;
+    right: 0vw;
+}
+
+.background .Element02 {
+    rotate: 180deg;
+    width: 60vw;
+    bottom: -8vh;
+    right: -1vw;
+}
+
+.background .Element03 {
+    rotate: -180deg;
+    width: 40vw;
+    top: -5vh;
+    left: -2vw;
+}
+
+.product .container {
+    width: 90vw;
+    height: fit-content;
+    margin: 20px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 25vw));
+    grid-template-rows: repeat(4, minmax(350px, 25vw));
+    grid-auto-rows: 410px;
+    column-gap: 2vw;
+    row-gap: 8vw;
+    justify-content: space-evenly;
+}
+
+.product .container a{
+    color: white;
+    text-decoration: none;
+}
+
+.product .container .item {
+    width: 100%;
+    border: 1px solid rgb(255, 0, 153);
+    font-size: 20px;
+    text-align: center;
+}
+
+.product .container .item .picture {
+    height: 70%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    text-indent: -10000px;
+}
+
+.product .container .item .name {
+    height: 20%;
+    font-size: calc(1vw + 10px);
+}
+
+.product .container .item .price {
+    height: 10%;
+    font-size: calc(1vw + 10px);
+    background-color: rgb(255, 0, 153);
+}
+
+.product .item:hover{
+    cursor: pointer;
+}

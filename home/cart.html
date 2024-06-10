@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+        img{
+            width: 20px;
+        }
+        *{
+            color: white;
+            margin: 0;
+        }
+        .cart_details{
+            background-color: black;
+            margin: 0;
+        } 
+        .cart_title::after{
+            display: block;
+            margin: 0;
+            width: fit-content;
+            content: "";
+            border: 10px solid;
+            border-color:   #0000 #0000  #000 #0000;
+            z-index: 10;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="cart_title">
+            <img src="../pictures/cartIcon.png" alt="cart icon" />
+            <span>cart</span>
+        </div>
+        <div class="cart_details">
+            <div class="item_list">
+                <ul>
+                    <li>xxxxxxxxxxxxx</li> <br>
+                    <li>y</li> <br>
+                    <li>z</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.instructions{
+    color: white;
+}
+
+.edit_item .options .edit a{
+    color: rgb(255, 0, 153);
+} 
+
+.table_container {
+    display: flex;
+    justify-content: center;
+}
+
+.item_table th{
+    background-color: rgb(255, 0, 153);
+    border: 1px solid gray;
+    text-transform: uppercase;
+}
+
+.item_table td{
+    color: white;
+    padding: 1vw;
+    border: 1px solid gray;
+    height: 30vw;
+    font-size: calc(1vw + 2px);
+    text-transform: uppercase;
+}
+
+.item_table .item_image{
+    width: 30vw;
+    padding: 1vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
